@@ -1,0 +1,228 @@
+.scrollContainer {
+  perspective: 3px;
+  perspective-origin: top;
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.scrollSpeed {
+  transform: translateZ(1px) scale(0.69);
+  transform-origin: top;
+}
+
+.smoothTransition {
+  transition: all 0.1s linear;
+}
+
+.coverQuestionAnimate::after {
+  content: "";
+  right: 0;
+  width: 10%;
+  position: absolute;
+  height: 61%;
+  top: 0%;
+  background-color: #b24d95;
+  clip-path: fill-box;
+  animation: coverQuestionTiming 4s step-end 1 forwards;
+}
+
+@keyframes coverQuestionTiming {
+  0% {
+    background: #b24d95;
+  }
+  93% {
+    background: transparent;
+  }
+  100% {
+    background: transparent;
+  }
+}
+
+.scaleToOne {
+  transform-origin: bottom;
+  animation: scaleToOneAnim 0.15s linear 1 forwards;
+}
+
+@keyframes scaleToOneAnim {
+  0% {
+    transform: scaleY(0);
+  }
+  100% {
+    transform: scaleY(1);
+  }
+}
+
+.scaleToZero {
+  transform-origin: bottom;
+  animation: scaleToZeroAnim 0.15s linear 1 forwards;
+}
+
+@keyframes scaleToZeroAnim {
+  0% {
+    transform: scaleY(1);
+  }
+  100% {
+    transform: scaleY(0);
+  }
+}
+
+.typingReveal::before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  width: 4px;
+  border-radius: 2px;
+  height: 100%;
+  background-color: #c0e4ca;
+  animation: typing 0.8s step-end infinite forwards;
+}
+
+@keyframes typing {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0);
+  }
+}
+
+.typingReveal {
+  animation: revealMessage 4s step-end 1 forwards;
+}
+
+@keyframes revealMessage {
+  4% {
+    transform: translateX(18.85%);
+  }
+  6% {
+    transform: translateX(31.2%);
+  }
+  9% {
+    transform: translateX(42.9%);
+  }
+  17% {
+    transform: translateX(47.3%);
+  }
+  22% {
+    transform: translateX(58.2%);
+  }
+  24% {
+    transform: translateX(76%);
+  }
+  27% {
+    transform: translateX(80.5%);
+  }
+  29% {
+    transform: translateX(89.5%);
+  }
+  35% {
+    transform: translateX(97.5%);
+  }
+  91% {
+    transform: translateX(89.5%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+.animateLeadershipArrow {
+  stroke-dasharray: 100;
+  animation: dash 4s linear infinite, shrink 4s linear forwards;
+  transform-origin: top right;
+}
+
+@keyframes dash {
+  to {
+    stroke-dashoffset: 400;
+  }
+}
+
+@keyframes shrink {
+  90% {
+    width: 100%;
+  }
+  100% {
+    width: 165.43px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  @keyframes shrink {
+    90% {
+      width: 100%;
+    }
+    100% {
+      width: 198.51px;
+    }
+  }
+}
+
+.graphClipRectangle {
+  transform-origin: left;
+  animation: slideOver 2s linear forwards;
+}
+
+@keyframes slideOver {
+  0% {
+    transform: scaleX(0);
+  }
+  100% {
+    transform: scaleX(1);
+  }
+}
+
+.cardShadow {
+  box-shadow: 0px 0px 20px -10px black;
+}
+
+.codeBlockExecute::before {
+  position: absolute;
+  right: 101%;
+  content: ">";
+  font-family: "Roboto Mono", monospace;
+}
+
+.animateStroke {
+  stroke-dasharray: 100;
+  animation: dash 4s linear infinite;
+  transform-origin: top right;
+}
+
+.codingTypingAnimation::after {
+  content: "l";
+  width: 10px;
+  height: 1rem;
+  background: white;
+  animation: typeCodeSpeed 1.3s step-end infinite;
+}
+
+@keyframes typeCodeSpeed {
+  0% {
+    visibility: visible;
+  }
+  50% {
+    visibility: hidden;
+  }
+}
+
+.appearWithArrowShrink {
+  animation: appear 5s linear forwards;
+  transform-origin: left;
+}
+
+@keyframes appear {
+  0% {
+    transform: scaleX(0);
+    display: none;
+  }
+  80% {
+    transform: scaleX(0);
+    display: none;
+  }
+  100% {
+    transform: scaleX(1);
+    display: flex;
+  }
+}
