@@ -30,31 +30,43 @@ const CodeWindow = ({ children, className, ...props }) => {
         isClosed ? `hidden` : ``
       } `}
     >
-      <div className="absolute -top-22px right-0 z-20 flex flex-row w-20 h-5">
-        <MinusIcon
-          width="15px"
-          className="mr-3 cursor-pointer"
-          fill="black"
+      <div className="absolute -top-22px right-2 z-20 flex flex-row h-5">
+        <div
+          className="transition-all hover:bg-blue flex items-center justify-center px-2 cursor-pointer group"
           onClick={() => {
             handleMinimize();
           }}
-        />
-        <ResizeWindowIcon
-          width="15px"
-          stroke="black"
-          className="mr-3 cursor-pointer"
+        >
+          <MinusIcon
+            width="15px"
+            fill="black"
+            className="transition-all group-hover:fill-current text-white"
+          />
+        </div>
+        <div
+          className="transition-all hover:bg-blue flex items-center justify-center px-2 cursor-pointer group"
           onClick={() => {
             handleMaximize();
           }}
-        />
-        <CloseIcon
-          width="15px"
-          fill="#d3342c"
-          className="cursor-pointer"
+        >
+          <ResizeWindowIcon
+            width="15px"
+            stroke="black"
+            className="transition-all group-hover:stroke-current text-white"
+          />
+        </div>
+        <div
+          className="transition-all hover:bg-red hover:fill-current text-white flex items-center justify-center px-2 cursor-pointer group"
           onClick={() => {
             handleClose();
           }}
-        />
+        >
+          <CloseIcon
+            width="15px"
+            fill="#d3342c"
+            className="transition-all group-hover:fill-current text-white"
+          />
+        </div>
       </div>
       <div
         className={`${

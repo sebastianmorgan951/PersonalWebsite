@@ -4,18 +4,13 @@ import { useEffect, useRef, useState } from "react";
 import styles from "../styles/scroll.module.css";
 import { useInView } from "react-intersection-observer";
 import { CactusIcon, CodeWindow, GraphGoingUpIcon } from "../components";
-import CloseIcon from "../components/svg/CloseIcon";
-import ResizeWindowIcon from "../components/svg/ResizeWindowIcon";
-import MinusIcon from "../components/svg/MinusIcon";
+import { Router } from "next/dist/client/router";
+import Nav from "../components/Nav";
 
 export default function Home() {
   const [arrowAnimationToggle, setArrowAnimationToggle] = useState(false);
   const [firstRender, setFirstRender] = useState(true);
-
-  const [ref, inView] = useInView({
-    threshold: 0,
-    rootMargin: "50px",
-  });
+  const [hoverWhoAmICard, setHoverWhoAmICard] = useState(false);
 
   const [triggerTypingRef, typingEffectView] = useInView({
     threshold: 1,
@@ -38,10 +33,7 @@ export default function Home() {
     <div
       className={`flex flex-col items-center justify-start h-auto bg-white min-w-full ${styles.scrollContainer}`}
     >
-      <div
-        className={`min-w-full absolute top-0 ${styles.scrollSpeed}`}
-        ref={ref}
-      >
+      <div className={`min-w-full absolute top-0 ${styles.scrollSpeed}`}>
         <Image
           src="/Background.jpg"
           layout="responsive"
@@ -53,77 +45,21 @@ export default function Home() {
         className="flex flex-col min-w-full bg-gradient-to-b from-secondary to-darkSecondary relative pb-10 mt-25%"
         id="bodyContent"
       >
-        <div className="min-w-full py-2 sticky -mt-2 -top-0.5 relative z-40">
-          <div
-            className={`${styles.smoothTransition} ${
-              inView
-                ? "align-start px-5% md:px-15%"
-                : "align-center px-5% md:pl-15% md:pr-25%"
-            } min-w-full bg-darkSecondary flex flex-row justify-center py-2 text-lightSecondary`}
-            id="nav"
-          >
-            <div
-              className={`${
-                styles.smoothTransition
-              } flex right-15% absolute self-center md:hidden border-solid border-darkSecondary max-h-52 max-w-52 rounded-t-xl border-8 border-b-0 w-18vw h-18vw ${
-                inView ? styles.scaleToOne : styles.scaleToZero
-              }`}
-              style={{
-                backgroundImage: "url(/MyFace.png)",
-                backgroundRepeat: "no-repeat",
-                backgroundSize: "cover",
-                backgroundPosition: "right",
-                bottom: "85%",
-              }}
-            />
-            <a
-              className={`${styles.smoothTransition} font-header font-bold text-xl md:text-2xl px-5`}
-              href=""
-            >
-              Home
-            </a>
-            <a
-              className={`${styles.smoothTransition} font-header font-bold text-xl md:text-2xl px-5`}
-            >
-              Nature
-            </a>
-            <a
-              className={`${styles.smoothTransition} font-header font-bold text-xl md:text-2xl px-5`}
-            >
-              Coding
-            </a>
-            <div
-              className={`hidden md:flex relative mx-5 ${
-                inView ? "w-30vw md:w-18vw" : "w-9vw md:w-7vw lg:w-4vw"
-              }`}
-            >
-              <div
-                className={`${
-                  styles.smoothTransition
-                } hidden md:flex absolute border-solid border-darkSecondary ${
-                  inView
-                    ? "w-30vw h-30vw md:w-18vw md:h-18vw border-8 rounded-xl -mt-50%"
-                    : "w-9vw h-9vw md:w-7vw md:h-7vw lg:w-4vw lg:h-4vw border-4 rounded-lg -mt-20%"
-                }`}
-                style={{
-                  backgroundImage: "url(/MyFace.png)",
-                  backgroundRepeat: "no-repeat",
-                  backgroundSize: "cover",
-                }}
-              />
-            </div>
-          </div>
-        </div>
+        <Nav />
         <div className="hidden md:flex h-7vw"></div>
-        <div className="py-5 lg:pl-20% lg:pr-25% md:pl-12% md:pr-15% pl-4% pr-6% flex flex-col items-start bg-secondary">
+        <div
+          className={`py-5 lg:pl-20% lg:pr-25% md:pl-12% md:pr-15% pl-4% pr-6% flex flex-col items-start bg-secondary  ${styles.hoverBrightenCard}`}
+        >
           <h1
-            className={`font-bold text-3xl md:text-4xl text-lightPrimary font-header relative mb-8 ${
+            className={`font-bold text-3xl md:text-5xl text-lightPrimary font-header relative mb-8 ${
               typingEffectView ? styles.coverQuestionAnimate : ``
             }`}
             ref={triggerTypingRef}
           >
             <div
-              className={`absolute w-100% bg-secondary h-100% right-0 z-10 ${
+              className={`absolute w-150px md:w-240px ${
+                hoverWhoAmICard ? "bg-lightPrimary" : "bg-secondary"
+              } h-100% left-0 z-10 ${
                 typingEffectView ? styles.typingReveal : ``
               }`}
             />
@@ -140,53 +76,29 @@ export default function Home() {
           </p>
         </div>
         <div
-          className={`mt-16 py-5 mr-2% pr-2% ml-4% pl-2% md:mr-10% md:pr-2% md:ml-13% md:pl-2% lg:mr-15% lg:pr-5% lg:ml-20% lg:pl-5% flex flex-col items-start bg-darkSecondary rounded-2xl ${styles.cardShadow}`}
+          className={`mt-16 py-5 mr-2% pr-2% ml-4% pl-2% md:mr-10% md:pr-2% md:ml-13% md:pl-2% lg:mr-15% lg:pr-5% lg:ml-20% lg:pl-5% flex flex-col items-start bg-darkSecondary rounded-2xl ${styles.hoverBrightenCard} ${styles.cardShadow}`}
         >
           <div
-            className={`w-full flex flex-row items-center justify-center relative`}
+            className={`w-full flex flex-col items-center justify-center relative`}
           >
-            <div className={`flex flex-col ${styles.scaleDown}`}>
-              <GraphGoingUpIcon
-                fill="#C0E4CA"
-                stroke="black"
-                fillAnimation={
-                  arrowAnimationToggle ? styles.graphClipRectangle : ``
-                }
-                className={
-                  arrowAnimationToggle
-                    ? `${styles.animateLeadershipArrow}`
-                    : `invisible`
-                }
-              />
-              <h1
-                className={`font-bold text-3xl md:text-4xl text-lightPrimary font-header relative mb-8`}
-                ref={triggerArrowAnimRef}
-              >
-                Leadership.
-              </h1>
-            </div>
-            <div
-              className={`${
-                arrowAnimationToggle ? styles.appearWithArrowShrink : `hidden`
-              } w-125.19px h-125.19px md:w-147.01px md:h-147.01px relative`}
+            <GraphGoingUpIcon
+              fill="#C0E4CA"
+              stroke="black"
+              fillAnimation={
+                arrowAnimationToggle ? styles.graphClipRectangle : ``
+              }
+              className={
+                arrowAnimationToggle
+                  ? `${styles.scaleDown} ${styles.animateLeadershipArrow}`
+                  : `invisible`
+              }
+            />
+            <h1
+              className={`font-bold text-3xl md:text-4xl text-lightPrimary font-header relative mb-8`}
+              ref={triggerArrowAnimRef}
             >
-              <Image
-                src="/MyFace.png"
-                layout="fill"
-                objectFit="cover"
-                className="rounded-lg"
-                alt="Leadership Picture"
-              />
-            </div>
-            <div className="w-125.19px h-125.19px md:w-147.01px md:h-147.01px relative">
-              <Image
-                src="/MyFace.png"
-                layout="fill"
-                objectFit="cover"
-                className="rounded-lg"
-                alt="Leadership Picture"
-              />
-            </div>
+              Leadership.
+            </h1>
           </div>
           <p className="font-body text-md md:text-lg lg:text-xl text-white leading-6 md:leading-7 lg:leading-8">
             Working to build a more inclusive and positive community at UC San
@@ -198,7 +110,9 @@ export default function Home() {
             and taking responsibility for my actions and shortcomings.
           </p>
         </div>
-        <CodeWindow className="mt-16 py-5 pl-4% ml-2% pr-2% mr-4% md:pl-3% md:ml-9% md:pr-3% md:mr-12% lg:pl-5% lg:ml-15% lg:pr-5% lg:mr-20% items-end">
+        <CodeWindow
+          className={`${styles.hoverBrightenCard} mt-16 py-5 pl-4% ml-2% pr-2% mr-4% md:pl-3% md:ml-9% md:pr-3% md:mr-12% lg:pl-5% lg:ml-15% lg:pr-5% lg:mr-20% items-end`}
+        >
           <h1
             className={` font-bold text-3xl md:text-4xl text-lightPrimary font-header relative mb-8`}
           >
@@ -210,24 +124,24 @@ export default function Home() {
             Interestingly enough, out of everything I've done, my coding
             experience is probably the least impressive part of my resume. I was
             an Applied Mathematics major until my 3rd year at UCSD, when I
-            realized that Computer Science was so much more fun. I have built
-            this website, so I clearly enjoy messing around with web
-            development, especially with React frameworks, and I have also been
-            exposed to Angular and enjoy the challenge Angular presents.
+            realized that Computer Science was so much more fun. I've built this
+            website, so I clearly enjoy messing around with web development,
+            especially with React frameworks, and I have also been exposed to
+            Angular and enjoy the challenge Angular presents.
           </p>
           <p
             className={`${styles.codeBlockExecute} ${styles.codingTypingAnimation} relative font-code text-sm md:text-md lg:text-lg text-white leading-6 md:leading-7 lg:leading-8`}
           >
             It seems like university always steers students in the direction of
-            software engineering, and I have thoroughly enjoyed working more
-            closely with algorithms and optimizing problems. For now, web
-            development is calling my name, but I am open to the idea of
-            exploring other paths in technology and learning as much as I can.
-            Over the past year, I've done just that: explore. First, I switched
-            my major to Math and Computer Sciences so I could explore the
-            coursework. I looked into machine learning and very quickly left
-            that for another time, worked on a minecraft mod and rediscovered
-            how fun Java was to work with, then I typed in{" "}
+            software engineering. I have actually thoroughly enjoyed working
+            closely with algorithms and optimizing problems that these classes
+            introduced. For now, web development is calling my name, but I am
+            open to the idea of exploring other paths in technology and learning
+            as much as I can. Over the past year, I've done just that: explore.
+            First, I switched my major to Math and Computer Sciences so I could
+            explore the coursework. I looked into machine learning and very
+            quickly left that for another time, worked on a minecraft mod and
+            rediscovered how fun Java was to work with, then I typed in{" "}
             <b>create-react-app</b> and the world of the web opened its arms to
             me.
           </p>
@@ -246,7 +160,7 @@ export default function Home() {
             />
           </div>
           <div
-            className={`bg-lightPrimary rounded-xl p-5 -mt-10 ${styles.cardShadow}`}
+            className={`bg-lightPrimary rounded-xl p-5 -mt-10 ${styles.cardShadow} ${styles.hoverBrightenCard}`}
           >
             <p className="font-body text-md md:text-lg lg:text-xl text-darkSecondary leading-6 md:leading-7 lg:leading-8 mb-10">
               I was fortunate to grow up in Riverside, California, where despite
