@@ -1,7 +1,7 @@
-import { BeetleIcon } from "../components";
-import Nav, { SimpleNav } from "../components/Nav";
+import { SimpleNav } from "../components/Nav";
 import styles from "../styles/scroll.module.css";
 import Image from "next/dist/client/image";
+import SunIcon from "../components/svg/SunIcon";
 
 export default function Nature() {
   const imageNameNums = [
@@ -9,17 +9,19 @@ export default function Nature() {
     2910, 2911, 2913, 2914, 2915, 2916, 2917, 2918, 2919, 2920, 2921, 2922,
     2923, 2924, 2925,
   ];
-  const colors = ["#5263ad", "#9c59a6", "#966e69", "#989c63", "#6a9582"];
 
   return (
     <div
-      className={`flex flex-col items-center justify-start h-auto bg-white min-w-full bg-lightPrimary pb-40 min-h-screen`}
+      className={`flex flex-col items-center justify-start h-auto bg-lightPrimary min-w-full bg-lightPrimary pb-40 min-h-screen`}
     >
       <SimpleNav />
       <div className="min-w-full px-3% md:px-15% lg:px-20%">
         <div
-          className={`bg-lightPrimary rounded-xl min-w-full flex flex-col p-5 items-center justify-center ${styles.cardShadow} ${styles.hoverBrightenCard}`}
+          className={`${styles.natureMainCardBorder} z-10 bg-lightPrimary min-w-full flex flex-col mt-4vw p-10 items-center justify-center ${styles.cardShadow} ${styles.hoverBrightenCard}`}
         >
+          <div className="flex flex-col items-center justify-center z-0">
+            <SunIcon className="-mt-9vw" width="15vw" fill="#793566" />
+          </div>
           <h1 className="font-header text-3xl md:text-5xl lg:text-6xl font-bold">
             Nature
           </h1>
@@ -31,14 +33,14 @@ export default function Nature() {
             post a collection of fun photos of bugs and things I've been able to
             take pictures of over the past year or so!
           </p>
-          <p className="font-body lg:text-2xl md:text-xl text-lg self-start">
-            <b>WARNING!</b> There are spiders and weird insects below, be aware.
+          <p className="font-body lg:text-2xl md:text-xl text-lg self-center">
+            <b>WARNING!</b> Spiders and weird insects below!
           </p>
         </div>
       </div>
       <div className="min-w-full items-center justify-center flex flex-col lg:p-5% md:p-3% p-1%">
         <div className="min-w-full items-evenly justify-center flex-wrap flex flex-row">
-          {imageNameNums.map((imgNum, idx) => {
+          {imageNameNums.map((imgNum) => {
             return (
               <div
                 key={imgNum}

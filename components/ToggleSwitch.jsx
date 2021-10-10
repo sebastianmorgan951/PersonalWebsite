@@ -22,7 +22,7 @@ const ToggleSwitch = ({ width, height, className, ...props }) => {
             : `-rotate-45 -translate-y-60%`
         } ${
           styles.leverArm
-        } transform transition-all origin-lever absolute left-20% mt-auto mb-auto top-0 bottom-0 w-80% h-10% bg-black rounded-full z-10`}
+        } transform transition-all origin-lever absolute left-20% mt-auto mb-auto top-0 bottom-0 w-80% h-10% bg-black rounded-xl z-10`}
       ></div>
     </div>
   );

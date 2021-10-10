@@ -1,0 +1,19 @@
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: darkslategray;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  margin-right: 10px;
+  background: white;
+  border-radius: 1000px;
+}
+
+li {
+  list-style-position: inside;
+}

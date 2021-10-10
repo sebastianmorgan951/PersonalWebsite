@@ -29,7 +29,7 @@ export default function Coding() {
 
   return (
     <div
-      className={`flex flex-col items-center justify-start h-auto bg-white min-w-full ${colors.bg} pb-40`}
+      className={`flex flex-col items-center justify-start h-auto   min-w-full ${colors.bg} pb-40`}
     >
       <SimpleNav />
       <div className="min-w-full px-3% md:px-15% lg:px-20%">
@@ -115,15 +115,19 @@ export default function Coding() {
             </li>
             <li>Building something visual was rewarding</li>
           </p>
-          <Image
-            alt=""
-            src={`/SnakeProgram.PNG`}
-            width={228}
-            height={294}
-            className="rounded-md"
-            placeholder="blur"
-            blurDataURL="iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mP8z/B1HgAGjgKUw8C4jQAAAABJRU5ErkJggg=="
-          />
+          <div className="relative min-w-200px max-w-400px min-h-200px max-h-400px  w-30% pt-40% m-2">
+            <div className="absolute top-0 left-0 w-100% h-100%">
+              <Image
+                alt=""
+                src={`/SnakeProgram.png`}
+                layout="fill"
+                objectFit="cover"
+                className="rounded-xl"
+                placeholder="blur"
+                blurDataURL="iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mP8z/B1HgAGjgKUw8C4jQAAAABJRU5ErkJggg=="
+              />
+            </div>
+          </div>
         </div>
         <div
           className={`mt-10 ${colors.cardBg} rounded-xl min-w-full flex flex-col p-5 items-center justify-center relative ${styles.cardShadow} ${styles.hoverBrightenCard}`}
@@ -267,7 +271,7 @@ export default function Coding() {
             <li>I had found a problem I was able to be obsessed with</li>
           </p>
           <div className="min-w-full items-evenly justify-center flex-wrap flex flex-row">
-            <div className="relative w-40% pt-40% m-2">
+            <div className="relative min-w-200px max-w-400px min-h-200px max-h-400px  w-30% pt-5% m-2">
               <div className="absolute top-0 left-0 w-100% h-100%">
                 <Image
                   alt=""
@@ -280,7 +284,7 @@ export default function Coding() {
                 />
               </div>
             </div>
-            <div className="relative w-40% pt-40% m-2">
+            <div className="relative min-w-200px max-w-400px min-h-200px max-h-400px  w-30% pt-30% m-2">
               <div className="absolute top-0 left-0 w-100% h-100%">
                 <Image
                   alt=""
@@ -368,6 +372,19 @@ export default function Coding() {
             <li>I am terrible at picking color themes</li>
             <li>Web Development seems pretty fun</li>
           </p>
+          <div className="relative min-w-200px max-w-400px min-h-200px max-h-400px  w-30% pt-30% m-2">
+            <div className="absolute top-0 left-0 w-100% h-100%">
+              <Image
+                alt=""
+                src={`/Coding_Hashvisualize.png`}
+                layout="fill"
+                objectFit="cover"
+                className="rounded-xl"
+                placeholder="blur"
+                blurDataURL="iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mP8z/B1HgAGjgKUw8C4jQAAAABJRU5ErkJggg=="
+              />
+            </div>
+          </div>
         </div>
         <div
           className={`mt-10 ${colors.cardBg} rounded-xl min-w-full flex flex-col p-5 items-center justify-center relative ${styles.cardShadow} ${styles.hoverBrightenCard}`}
@@ -408,18 +425,89 @@ export default function Coding() {
           <h1
             className={`font-header text-2xl md:text-4xl lg:text-5xl text-center font-bold ${colors.text}`}
           >
-            React Developer with AMF Media
+            React Developer Intern <br /> AMF Media
           </h1>
           <p
             className={`font-body lg:text-xl md:text-lg text-md mb-5 self-start ${colors.text}`}
-          ></p>
+          >
+            As a third year, through my leadership with Out in STEM at UCSD, I
+            was constantly exposed and close to people who were incredibly
+            successful and people who reached out for every opportunity. I
+            believe this is one of the main catalysts that pushed me to look
+            hard for an internship that year. I finally found an opportunity
+            that looked perfect, as a React Developer with AMF Media.
+            <br />
+            <br></br>I applied, interviewed, and instantly loved the mission of
+            AMF Media. I would be working on a new application of theirs,{" "}
+            <b>Neufluence</b>. The goal of Neufluence was to build an inclusive
+            and diverse platform which would connect social media influencers
+            with company sponsors. This would be achieved by leveraging tools to
+            inform creators what money they were worth, so as not to be taken
+            advantage of by companies, by increasing the discoverability of all
+            signed up influencers through our dashboard, and by helping
+            influencers build a <b>Media Kit</b>, a sort of resume which would
+            show off their creative skills. <br />
+            <br />
+            My first day consisted of a very short training, then giving me time
+            to adapt to the codebase and attempt to understand what exactly was
+            going on behind the scenes. Some of my first tasks included{" "}
+            <b>understanding Firebase</b> and ensuring that we had a
+            user-friendly onboarding process for users and companies. I worked
+            on this through descriptive error messages and connecting accounts
+            that had signed up both by email and Facebook authentication.
+            <br />
+            <br />
+            As it became clear that I was willing to take on more responsibility
+            and work, I was given many more interesting tasks. One feature I
+            worked on allowed users to view their follower location distribution
+            both by city and country. During that time, I took initiative and
+            also observed the data our Instagram API was pulling, noticing that
+            we were only looking at the "Male" and "Female" audience gender
+            data. This did not make sense for a modern platform which should
+            serve non-binary and gender nonconforming people, so I included all
+            gender data for this page I worked on. <br />
+            <br />
+            Soon, I took on two of my largest projects. First, I had to
+            implement a new front page design for Neufluence with both the Brand
+            and Influencer home pages. This design also had to be responsive,
+            adapting to any screen which the app could be loaded on. I used
+            breakpoints and the styled system and styled components packages to
+            achieve this responsive design. The most technical project was a
+            complete overhaul of the <b>Media Kit</b> feature.
+            <br />
+            <br />
+            The Media Kit was an interactive template an influencer could use to
+            build a cohesive and creative resume. First, to reduce the number of
+            calls to our storage database, I changed the saving mechanism,
+            storing all changes locally until a Save button was pressed. Then, I
+            created a dynamic component for listing all the user's social media
+            accounts, allowing users to remove or add social media icons and
+            handles from their Media Kit. I also had to ensure that text would
+            resize to avoid overflowing outside of specific areas. I implemented
+            features to delete old media kits from a user's inbox, and give
+            custom names to each media kit. Finally, I had to ensure this
+            feature would work on different screen sizes, and while the
+            groundwork for this portion had been laid out for me, I added
+            several bits and pieces to ensure that our screen layout had no
+            problems and was completely user friendly.
+            <br />
+            <br />I learned a huge amount with AMF Media. I had a supportive
+            manager and I was able to work in a positive environment, and this
+            gave me the confidence I needed to realize that I could adapt to any
+            environment and that I deserved these opportunities.
+          </p>
           <p
             className={`font-body lg:text-xl md:text-lg text-md mb-5 self-start ${colors.text}`}
           >
             <b>What I learned:</b>
             <br />
-            <li>Coding with a visual product is very rewarding</li>
-            <li>I had found a problem I was able to be obsessed with</li>
+            <li>NextJS is amazing</li>
+            <li>How to build responsive websites</li>
+            <li>How to effectively authenticate users</li>
+            <li>Best practices for protecting data</li>
+            <li>How to create faster pages</li>
+            <li>Thinking of the user first</li>
+            <li>How to use github effectively</li>
           </p>
         </div>
         <div
@@ -432,15 +520,54 @@ export default function Coding() {
           </h1>
           <p
             className={`font-body lg:text-xl md:text-lg text-md mb-5 self-start ${colors.text}`}
-          ></p>
+          >
+            Over the past several months, I have been fortunate to work on many
+            different web frameworks and coding languages. I was in charge of
+            the <b>oSTEM @ UCSD</b> website for some time, and while this did
+            not require too much groundwork, it pushed me to learn Angular to
+            understand how to update our website and fix some bugs. I have also
+            been involved as one of the people handling the website for UCSD's{" "}
+            <b>Professional Evening with Industry</b> event, using Drupal to
+            update some of the website content.
+          </p>
           <p
             className={`font-body lg:text-xl md:text-lg text-md mb-5 self-start ${colors.text}`}
           >
             <b>What I learned:</b>
             <br />
-            <li>Coding with a visual product is very rewarding</li>
-            <li>I had found a problem I was able to be obsessed with</li>
+            <li>Angular is absolutely worth learning</li>
+            <li>
+              Web development can mean a lot of things, and I like most of them
+            </li>
           </p>
+          <div className="min-w-full items-evenly justify-center flex-wrap flex flex-row">
+            <div className="relative min-w-200px max-w-400px min-h-200px max-h-400px  w-30% pt-5% m-2">
+              <div className="absolute top-0 left-0 w-100% h-100%">
+                <Image
+                  alt=""
+                  src={`/Coding_oSTEM.png`}
+                  layout="fill"
+                  objectFit="cover"
+                  className="rounded-xl"
+                  placeholder="blur"
+                  blurDataURL="iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mP8z/B1HgAGjgKUw8C4jQAAAABJRU5ErkJggg=="
+                />
+              </div>
+            </div>
+            <div className="relative min-w-200px max-w-400px min-h-200px max-h-400px  w-30% pt-30% m-2">
+              <div className="absolute top-0 left-0 w-100% h-100%">
+                <Image
+                  alt=""
+                  src={`/Coding_PEI.png`}
+                  layout="fill"
+                  objectFit="cover"
+                  className="rounded-xl"
+                  placeholder="blur"
+                  blurDataURL="iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mP8z/B1HgAGjgKUw8C4jQAAAABJRU5ErkJggg=="
+                />
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>

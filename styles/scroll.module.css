@@ -234,3 +234,28 @@
 .hoverBrightenCard:hover {
   transform: scale(1.02, 1.02);
 }
+
+.natureMainCardBorder {
+  animation: borderBlob 5s ease-in-out infinite;
+}
+
+@keyframes borderBlob {
+  0% {
+    border-bottom-left-radius: 25% 30%;
+    border-top-right-radius: 25% 30%;
+    border-top-left-radius: 2%;
+    border-bottom-right-radius: 2%;
+  }
+  50% {
+    border-bottom-left-radius: 2%;
+    border-top-right-radius: 2%;
+    border-top-left-radius: 25% 30%;
+    border-bottom-right-radius: 25% 30%;
+  }
+  100% {
+    border-bottom-left-radius: 25% 30%;
+    border-top-right-radius: 25% 30%;
+    border-top-left-radius: 2%;
+    border-bottom-right-radius: 2%;
+  }
+}

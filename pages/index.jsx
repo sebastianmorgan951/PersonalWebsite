@@ -123,10 +123,9 @@ export default function Home() {
             Interestingly enough, I only discovered my love for Computer
             Sciences about a year ago. I was an Applied Mathematics major until
             my 3rd year at UCSD, when I realized that Computer Science was so
-            much more fun. I've built this website, so I clearly enjoy messing
-            around with web development, especially with React frameworks, and I
-            have also been exposed to Angular and enjoy the challenge Angular
-            presents.
+            much more fun. I've built this website and I enjoy web development,
+            especially using React frameworks, but I have also been exposed to
+            Angular and enjoy the challenge Angular presents.
           </p>
           <p
             className={`${styles.codeBlockExecute} ${styles.codingTypingAnimation} relative font-code text-sm md:text-md lg:text-lg text-white leading-6 md:leading-7 lg:leading-8`}
