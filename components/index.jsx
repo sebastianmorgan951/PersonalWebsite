@@ -5,7 +5,6 @@ import CloseIcon from "./svg/CloseIcon";
 import ResizeWindowIcon from "./svg/ResizeWindowIcon";
 import CactusIcon from "./svg/Cactus";
 import BeetleIcon from "./svg/Beetle";
-import LazyImage from "./LazyImage";
 
 export {
   CodeWindow,
@@ -15,5 +14,4 @@ export {
   ResizeWindowIcon,
   CactusIcon,
   BeetleIcon,
-  LazyImage,
 };

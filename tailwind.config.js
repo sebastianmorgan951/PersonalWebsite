@@ -48,6 +48,7 @@ module.exports = {
         "20%": "20%",
         "25%": "25%",
         "30%": "30%",
+        "35%": "35%",
         "40%": "40%",
         "50%": "50%",
         "60%": "60%",
@@ -71,6 +72,7 @@ module.exports = {
         40: "10rem",
       },
       maxWidth: {
+        "500px": "500px",
         "350px": "350px",
         "200px": "200px",
       },
@@ -79,6 +81,9 @@ module.exports = {
       },
       blur: {
         "1px": "1px",
+      },
+      transformOrigin: {
+        lever: "13%",
       },
     },
     fontSize: {

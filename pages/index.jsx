@@ -1,10 +1,8 @@
-import Head from "next/head";
 import Image from "next/image";
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useState } from "react";
 import styles from "../styles/scroll.module.css";
 import { useInView } from "react-intersection-observer";
 import { CactusIcon, CodeWindow, GraphGoingUpIcon } from "../components";
-import { Router } from "next/dist/client/router";
 import Nav from "../components/Nav";
 
 export default function Home() {
@@ -104,10 +102,11 @@ export default function Home() {
             Working to build a more inclusive and positive community at UC San
             Diego as the VP–Internal, then as the co-President for Out in STEM
             at UCSD. As a student leader, I've had to manage conflict, work in
-            and lead a team, and listen to every person within that team. As the
-            co-President of oSTEM @ UCSD, I have worked to build the confidence
-            of incoming student leaders, becoming a more effective communicator,
-            and taking responsibility for my actions and shortcomings.
+            and lead a team, and listen to every person within that team.
+            Currently, as the co-President of oSTEM @ UCSD, I have worked to
+            build the confidence of incoming student leaders, becoming a more
+            effective communicator, and taking responsibility for my actions and
+            shortcomings.
           </p>
         </div>
         <CodeWindow
@@ -121,13 +120,13 @@ export default function Home() {
           <p
             className={`${styles.codeBlockExecute} relative font-code text-sm md:text-md lg:text-lg mb-10 text-white leading-6 md:leading-7 lg:leading-8`}
           >
-            Interestingly enough, out of everything I've done, my coding
-            experience is probably the least impressive part of my resume. I was
-            an Applied Mathematics major until my 3rd year at UCSD, when I
-            realized that Computer Science was so much more fun. I've built this
-            website, so I clearly enjoy messing around with web development,
-            especially with React frameworks, and I have also been exposed to
-            Angular and enjoy the challenge Angular presents.
+            Interestingly enough, I only discovered my love for Computer
+            Sciences about a year ago. I was an Applied Mathematics major until
+            my 3rd year at UCSD, when I realized that Computer Science was so
+            much more fun. I've built this website, so I clearly enjoy messing
+            around with web development, especially with React frameworks, and I
+            have also been exposed to Angular and enjoy the challenge Angular
+            presents.
           </p>
           <p
             className={`${styles.codeBlockExecute} ${styles.codingTypingAnimation} relative font-code text-sm md:text-md lg:text-lg text-white leading-6 md:leading-7 lg:leading-8`}
@@ -147,20 +146,22 @@ export default function Home() {
           </p>
         </CodeWindow>
         <div className="relative mt-16 py-5 px-5% md:px-15% lg:px-25% flex flex-col items-center">
-          <h1
-            className={`font-bold text-3xl md:text-4xl text-lightPrimary font-header relative text-center`}
-          >
-            More About Me!
-          </h1>
-          <div className="w-50% max-w-350px">
-            <CactusIcon
-              stroke="#793566"
-              fill="#C0E4CA"
-              className={styles.animateStroke}
-            />
+          <div className="relative flex flex-row items-end justify-center min-w-full">
+            <div className="w-50% max-w-200px md:max-w-350px z-0">
+              <CactusIcon
+                stroke="#793566"
+                fill="#C0E4CA"
+                className={styles.animateStroke}
+              />
+            </div>
+            <h1
+              className={`mb-5 md:mb-10 -ml-9% md:-ml-15% whitespace-nowrap font-bold text-3xl md:text-5xl text-lightPrimary font-header relative text-center`}
+            >
+              More About Me!
+            </h1>
           </div>
           <div
-            className={`bg-lightPrimary rounded-xl p-5 -mt-10 ${styles.cardShadow} ${styles.hoverBrightenCard}`}
+            className={`bg-lightPrimary rounded-xl p-5 -mt-5 md:-mt-10 z-10 ${styles.cardShadow} ${styles.hoverBrightenCard}`}
           >
             <p className="font-body text-md md:text-lg lg:text-xl text-darkSecondary leading-6 md:leading-7 lg:leading-8 mb-10">
               I was fortunate to grow up in Riverside, California, where despite
