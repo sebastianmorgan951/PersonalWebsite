@@ -1,11 +1,12 @@
 import "tailwindcss/tailwind.css";
 import styles from "../styles/main.css";
+import Head from "next/head";
 
 function MyApp({ Component, pageProps }) {
   return (
     <>
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <head>
+      <Head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link
           rel="preconnect"
@@ -24,7 +25,7 @@ function MyApp({ Component, pageProps }) {
           href="https://fonts.googleapis.com/css2?family=Acme&family=Lato:wght@400;700&display=swap"
           rel="stylesheet"
         />
-      </head>
+      </Head>
       <Component {...pageProps} />
     </>
   );
