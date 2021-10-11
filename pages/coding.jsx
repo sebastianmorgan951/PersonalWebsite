@@ -9,6 +9,10 @@ export default function Coding() {
     bg: "bg-lightPrimary",
     cardBg: "bg-lightPrimary",
     text: "text-black",
+    oppBg: "bg-secondary",
+    oppText: "text-white",
+    buttonHover: "hover:bg-darkSecondary",
+    hoverText: "hover:text-white",
   });
 
   const handleColorSwitch = () => {
@@ -17,6 +21,10 @@ export default function Coding() {
         bg: "bg-darkSecondary",
         cardBg: "bg-secondary",
         text: "text-white",
+        oppBg: "bg-lightPrimary",
+        oppText: "text-black",
+        buttonHover: "hover:bg-primary",
+        hoverText: "hover:text-white",
       });
       return;
     }
@@ -24,6 +32,10 @@ export default function Coding() {
       bg: "bg-lightPrimary",
       cardBg: "bg-lightPrimary",
       text: "text-black",
+      oppBg: "bg-secondary",
+      oppText: "text-white",
+      buttonHover: "hover:bg-darkSecondary",
+      hoverText: "hover:text-white",
     });
   };
 
@@ -94,6 +106,15 @@ export default function Coding() {
           >
             Terminal Snake Game
           </h1>
+          <a href="https://github.com/sebastianmorgan951/Java-Console-Snake-Game">
+            <button
+              className={`${colors.oppBg} ${colors.oppText} ${colors.hoverText} mb-5 rounded-md transition-all ${colors.buttonHover} hover:px-10`}
+            >
+              <p className="font-header font-bold lg:text-lg md:text-md text-sm mx-5 my-2">
+                Github Repo
+              </p>
+            </button>
+          </a>
           <p
             className={`font-body lg:text-xl md:text-lg text-md mb-5 self-start ${colors.text}`}
           >
@@ -179,6 +200,15 @@ export default function Coding() {
           >
             Predicting Gentrified Tracts
           </h1>
+          <a href="https://github.com/sebastianmorgan951/Gentrified_Tracts">
+            <button
+              className={`${colors.oppBg} ${colors.oppText} ${colors.hoverText} mb-5 rounded-md transition-all ${colors.buttonHover} hover:px-10`}
+            >
+              <p className="font-header font-bold lg:text-lg md:text-md text-sm mx-5 my-2">
+                Github Repo
+              </p>
+            </button>
+          </a>
           <p
             className={`font-body lg:text-xl md:text-lg text-md mb-5 self-start ${colors.text}`}
           >
@@ -241,6 +271,15 @@ export default function Coding() {
           >
             Minecraft Modding
           </h1>
+          <a href="https://github.com/sebastianmorgan951/ComicallyLargeSpoonMod">
+            <button
+              className={`${colors.oppBg} ${colors.oppText} ${colors.hoverText} mb-5 rounded-md transition-all ${colors.buttonHover} hover:px-10`}
+            >
+              <p className="font-header font-bold lg:text-lg md:text-md text-sm mx-5 my-2">
+                Github Repo
+              </p>
+            </button>
+          </a>
           <p
             className={`font-body lg:text-xl md:text-lg text-md mb-5 self-start ${colors.text}`}
           >
@@ -337,6 +376,26 @@ export default function Coding() {
           >
             Hashmap Visualizer
           </h1>
+          <div className="flex flex-row justify-center items-center">
+            <a href="https://sebastianmorgan951.github.io/HashMapVisualizerDeployed/">
+              <button
+                className={`${colors.oppBg} ${colors.oppText} ${colors.hoverText} mb-5 mr-5 rounded-md transition-all ${colors.buttonHover} hover:px-10`}
+              >
+                <p className="font-header font-bold lg:text-lg md:text-md text-sm mx-5 my-2">
+                  Deployed App
+                </p>
+              </button>
+            </a>
+            <a href="https://github.com/sebastianmorgan951/HashMapVisualizerDeployed">
+              <button
+                className={`${colors.oppBg} ${colors.oppText} ${colors.hoverText} mb-5 rounded-md transition-all ${colors.buttonHover} hover:px-10`}
+              >
+                <p className="font-header font-bold lg:text-lg md:text-md text-sm mx-5 my-2">
+                  Github Repo
+                </p>
+              </button>
+            </a>
+          </div>
           <p
             className={`font-body lg:text-xl md:text-lg text-md mb-5 self-start ${colors.text}`}
           >
@@ -427,6 +486,15 @@ export default function Coding() {
           >
             React Developer Intern <br /> AMF Media
           </h1>
+          <a href="https://app.neufluence.com/">
+            <button
+              className={`${colors.oppBg} ${colors.oppText} ${colors.hoverText} mb-5 rounded-md transition-all ${colors.buttonHover} hover:px-10`}
+            >
+              <p className="font-header font-bold lg:text-lg md:text-md text-sm mx-5 my-2">
+                Neufluence App
+              </p>
+            </button>
+          </a>
           <p
             className={`font-body lg:text-xl md:text-lg text-md mb-5 self-start ${colors.text}`}
           >
@@ -518,6 +586,26 @@ export default function Coding() {
           >
             Other Web Duties
           </h1>
+          <div className="flex flex-row justify-center items-center">
+            <a href="https://ostem.ucsd.edu">
+              <button
+                className={`mr-5 ${colors.oppBg} ${colors.oppText} ${colors.hoverText} mb-5 rounded-md transition-all ${colors.buttonHover} hover:px-10`}
+              >
+                <p className="font-header font-bold lg:text-lg md:text-md text-sm mx-5 my-2">
+                  oSTEM Website
+                </p>
+              </button>
+            </a>
+            <a href="https://jacobsschool.ucsd.edu/idea/events/pei">
+              <button
+                className={`${colors.oppBg} ${colors.oppText} ${colors.hoverText} mb-5 rounded-md transition-all ${colors.buttonHover} hover:px-10`}
+              >
+                <p className="font-header font-bold lg:text-lg md:text-md text-sm mx-5 my-2">
+                  PEI Website
+                </p>
+              </button>
+            </a>
+          </div>
           <p
             className={`font-body lg:text-xl md:text-lg text-md mb-5 self-start ${colors.text}`}
           >
