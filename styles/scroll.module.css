@@ -3,6 +3,7 @@
   perspective-origin: top;
   overflow-x: hidden;
   overflow-y: auto;
+  height: 100vh;
 }
 
 .scrollSpeed {
