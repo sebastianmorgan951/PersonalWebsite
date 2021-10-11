@@ -31,12 +31,16 @@ export default function Home() {
     <div
       className={`flex flex-col items-center justify-start bg-white min-w-full`}
     >
-      <Image
-        src="/Background.jpg"
-        layout="fill"
-        objectFit="cover"
-        className="z-0"
-      />
+      <div className="absolute w-100% pt-40%">
+        <div className="absolute top-0 left-0 w-100% h-100%">
+          <Image
+            src="/Background.jpg"
+            layout="fill"
+            objectFit="cover"
+            className="z-0"
+          />
+        </div>
+      </div>
       <div
         className="flex flex-col min-w-full bg-gradient-to-b from-secondary to-darkSecondary relative pb-10 z-10 mt-25%"
         id="bodyContent"
