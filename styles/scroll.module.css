@@ -1,7 +1,6 @@
 .scrollContainer {
   perspective: 3px;
   perspective-origin: top;
-  height: 100vh;
   overflow-x: hidden;
   overflow-y: auto;
 }
