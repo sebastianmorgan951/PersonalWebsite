@@ -186,6 +186,63 @@ export default function Home() {
               </p>
             </div>
           </div>
+          <div
+            className={`mt-20 mb-20 py-5 lg:pl-20% lg:pr-25% md:pl-12% md:pr-15% pl-4% pr-6% flex flex-col items-center bg-secondary  ${styles.hoverBrightenCard}`}
+          >
+            <h1
+              className={`font-bold text-2xl md:text-4xl text-lightPrimary text-center font-header relative mb-3`}
+            >
+              How did I build this Website?
+            </h1>
+            <p className="font-body mb-6 text-md md:text-lg lg:text-xl text-lightPrimary leading-6 md:leading-7 lg:leading-8">
+              Check out the Github repository for this website! You can follow
+              the <b>button below</b> for the code. I used tailwindcss to style
+              most of the components, this allowed me deploy this application
+              fairly quickly, however came at the cost of not thinking to build
+              a more reusable component-driven application.
+              <br />
+              <br />
+              To speed up load times, I used the built-in NextJS Image
+              components, which are lazy loading by default, and reduced the
+              image size for all non-cover images. To create an aspect ratio for
+              the images, I created a relatively positioned div to contain each
+              image, and set a percent width and percent <b>padding top</b> on
+              the div. I set the padding top, as the padding top percent is with
+              regards to the width of the parent element, giving us a div with a
+              fixed length:width ratio. The image is then absolutely positioned
+              within this div, and you give it a width 100% and height 100% (in
+              NextJS this means setting the layout to fill), and top and left 0.
+              Finally, you make the image objectfit attribute equal to cover,
+              and you're done.
+              <br />
+              <br />
+              I only used one package other than tailwindcss on this
+              application, and the package was to simplify the built-in
+              intersection observer so I could detect when the user had scrolled
+              a certain amount more easily rather than listening to scroll
+              events, which would hinder the performance of the website. I
+              recommend you try to resize your screen to break this layout, I
+              have designed it with different screen sizes in mind so I hope
+              that my design is robust in any circumstance!
+              <br />
+              <br />I spent about one and a half weeks working on this website
+              for an average of 3-4 hours a day. Much of that time was spent
+              thinking up creative ways to make this home page fun for the user.
+              Try to find all of the easter eggs around this website, all of
+              them are fairly obvious, but are kind of fun (: Also use devtools
+              to see how some of these animations were implemented, they were
+              fun to figure out!
+            </p>
+            <a href="https://github.com/sebastianmorgan951/PersonalWebsite">
+              <button
+                className={`bg-lightPrimary text-black hover:text-white mb-5 rounded-md transition-all hover:bg-darkSecondary hover:px-10`}
+              >
+                <p className="font-header font-bold lg:text-lg md:text-md text-sm mx-5 my-2">
+                  Source Code for this Website
+                </p>
+              </button>
+            </a>
+          </div>
         </div>
       </div>
     </div>
