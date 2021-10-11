@@ -29,7 +29,7 @@ export default function Home() {
 
   return (
     <div
-      className={`flex flex-col items-center justify-start h-auto bg-white min-w-full ${styles.scrollContainer}`}
+      className={`flex flex-col items-center justify-start bg-white min-w-full ${styles.scrollContainer}`}
     >
       <div className={`min-w-full absolute top-0 ${styles.scrollSpeed}`}>
         <Image
