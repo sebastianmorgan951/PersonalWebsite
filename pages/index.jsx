@@ -70,10 +70,10 @@ export default function Home() {
               My name is Sebastian Morgan, and I am a 4<sup>th</sup> year{" "}
               <b>Math and Computer Sciences</b> student at the University of
               California, San Diego. Beyond web development and other fun coding
-              endeavors, I enjoy myself by spending as much time outside as I
-              can, leading within the communities that have made an impact on my
-              life, and appreciating the people and opportunities that have
-              taken me this far.
+              endeavors, I enjoy spending as much time interacting with the
+              natural world as I can, leading within the communities that have
+              made an impact on my life, and appreciating the people and
+              opportunities that have taken me this far.
             </p>
           </div>
           <div
@@ -102,13 +102,14 @@ export default function Home() {
               </h1>
             </div>
             <p className="font-body text-md md:text-lg lg:text-xl text-white leading-6 md:leading-7 lg:leading-8">
-              Working to build a more inclusive and positive community at UC San
-              Diego as the VP–Internal, then as the co-President for Out in STEM
-              at UCSD. As a student leader, I've had to manage conflict, work in
-              and lead a team, and listen to every person within that team.
-              Currently, as the co-President of oSTEM @ UCSD, I have worked to
-              build the confidence of incoming student leaders, becoming a more
-              effective communicator, and taking responsibility for my actions
+              As a student leader, I am working to build a more inclusive and
+              positive community at UC San Diego as the VP–Internal, then as the
+              co-President for Out in STEM at UCSD. Over the past nearly three
+              years with Out in STEM at UCSD, I've had to manage conflict, work
+              in and lead a team, and listen to every person within that team.
+              Currently, as the co-President of oSTEM @ UCSD, I am working to
+              build the confidence of incoming student leaders, to become a more
+              effective communicator, and to take responsibility for my actions
               and shortcomings.
             </p>
           </div>
@@ -123,28 +124,30 @@ export default function Home() {
             <p
               className={`${styles.codeBlockExecute} relative font-code text-sm md:text-md lg:text-lg mb-10 text-white leading-6 md:leading-7 lg:leading-8`}
             >
-              Interestingly enough, I only discovered my love for Computer
-              Sciences about a year ago. I was an Applied Mathematics major
-              until my 3rd year at UCSD, when I realized that Computer Science
-              was so much more fun. I've built this website and I enjoy web
-              development, especially using React frameworks, but I have also
-              been exposed to Angular and enjoy the challenge Angular presents.
+              I only discovered my love for Computer Sciences during my 3
+              <sup>rd</sup> year at UCSD. I was an Applied Mathematics major
+              until my 3<sup>rd</sup> year, when I realized that Computer
+              Science felt much more concrete and personally fulfilling. I've
+              built this website and I enjoy web development, especially using
+              React frameworks, though I have experience with Angular and enjoy
+              the challenge Angular presents.
             </p>
             <p
               className={`${styles.codeBlockExecute} ${styles.codingTypingAnimation} relative font-code text-sm md:text-md lg:text-lg text-white leading-6 md:leading-7 lg:leading-8`}
             >
-              It seems like university always steers students in the direction
-              of software engineering. I have actually thoroughly enjoyed
-              working closely with algorithms and optimizing problems that these
-              classes introduced. For now, web development is calling my name,
-              but I am open to the idea of exploring other paths in technology
-              and learning as much as I can. Over the past year, I've done just
-              that: explore. First, I switched my major to Math and Computer
-              Sciences so I could explore the coursework. I looked into machine
-              learning and very quickly left that for another time, worked on a
-              minecraft mod and rediscovered how fun Java was to work with, then
-              I typed in <b>create-react-app</b> and the world of the web opened
-              its arms to me.
+              It seems like UCSD always steers students in the direction of
+              software engineering. I have thoroughly enjoyed working closely
+              with algorithms and optimizing problems that these classes
+              introduced. At this moment I am deeply interested in web
+              development, but I am open to the idea of exploring other paths in
+              technology and learning as much as I can. Over the past year, I've
+              done just that: explore. First, I switched my major to Math and
+              Computer Sciences so I could immerse myself more deeply in
+              Computer Sciences. I looked into machine learning and prompty left
+              that for another time, worked on a minecraft mod and rediscovered
+              how fun Java was to work with, then I typed in{" "}
+              <b>create-react-app</b> and the world of the web opened its arms
+              to me.
             </p>
           </CodeWindow>
           <div className="relative mt-16 py-5 px-5% md:px-15% lg:px-25% flex flex-col items-center">
@@ -198,8 +201,8 @@ export default function Home() {
               Check out the Github repository for this website! You can follow
               the <b>button below</b> for the code. I used tailwindcss to style
               most of the components, this allowed me deploy this application
-              fairly quickly, however came at the cost of not thinking to build
-              a more reusable component-driven application.
+              fairly quickly, however this came at the cost of not thinking to
+              build a more reusable component-driven application.
               <br />
               <br />
               To speed up load times, I used the built-in NextJS Image
