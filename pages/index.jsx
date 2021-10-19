@@ -160,7 +160,7 @@ export default function Home() {
                 />
               </div>
               <h1
-                className={`mb-5 md:mb-10 -ml-9% md:-ml-15% whitespace-nowrap font-bold text-3xl md:text-5xl text-lightPrimary font-header relative text-center`}
+                className={`mb-5 md:mb-10 -ml-4% xs:-ml-9% sm:-ml-50px md:-ml-100px whitespace-nowrap font-bold text-3xl md:text-5xl text-lightPrimary font-header relative text-center`}
               >
                 More About Me!
               </h1>

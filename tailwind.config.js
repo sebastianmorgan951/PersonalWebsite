@@ -1,3 +1,5 @@
+const defaultTheme = require("tailwindcss/defaultTheme");
+
 module.exports = {
   mode: "jit",
   purge: ["./pages/**/*.{js,ts,jsx,tsx}", "./components/**/*.{js,ts,jsx,tsx}"],
@@ -28,6 +30,8 @@ module.exports = {
         "22px": "22px",
         "30px": "30px",
         "36px": "36px",
+        "50px": "50px",
+        "100px": "100px",
         "180px": "180px",
         "150px": "150px",
         "240px": "240px",
@@ -105,6 +109,10 @@ module.exports = {
       "5xl": "48px",
       "6xl": "64px",
       "7xl": "80px",
+    },
+    screens: {
+      xs: "400px",
+      ...defaultTheme.screens,
     },
   },
   variants: {
