@@ -228,11 +228,11 @@
 }
 
 .hoverBrightenCard {
-  transition: all 0.3s ease-in-out;
+  transition: all 0.18s ease-in-out;
 }
 
 .hoverBrightenCard:hover {
-  transform: scale(1.02, 1.02);
+  transform: scale(1.01, 1.01);
 }
 
 .natureMainCardBorder {

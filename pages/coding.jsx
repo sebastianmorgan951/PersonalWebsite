@@ -44,11 +44,11 @@ export default function Coding() {
       className={`flex flex-col items-center justify-start h-auto   min-w-full ${colors.bg} pb-40`}
     >
       <SimpleNav />
-      <div className="min-w-full px-3% md:px-15% lg:px-20%">
-        <div
+      <main className="min-w-full px-3% md:px-15% lg:px-20%">
+        <section
           className={`mt-10 ${colors.cardBg} rounded-xl min-w-full flex flex-col p-5 items-center justify-center relative ${styles.cardShadow} ${styles.hoverBrightenCard}`}
         >
-          <div
+          <button
             className="absolute -top-16"
             onClick={() => {
               handleColorSwitch();
@@ -59,7 +59,7 @@ export default function Coding() {
               height="h-24"
               className="transform -rotate-90"
             />
-          </div>
+          </button>
           <h1
             className={`font-header text-3xl md:text-5xl lg:text-6xl font-bold mt-3 ${colors.text}`}
           >
@@ -97,23 +97,22 @@ export default function Coding() {
             <b>NOTE!</b> This is in chronological order, so scroll all the way
             down for my most relevant experience.
           </p>
-        </div>
-        <div
+        </section>
+        <section
           className={`mt-10 ${colors.cardBg} rounded-xl min-w-full flex flex-col p-5 items-center justify-center relative ${styles.cardShadow} ${styles.hoverBrightenCard}`}
         >
-          <h1
+          <h2
             className={`font-header text-2xl md:text-4xl lg:text-5xl text-center font-bold ${colors.text}`}
           >
             Terminal Snake Game
-          </h1>
-          <a href="https://github.com/sebastianmorgan951/Java-Console-Snake-Game">
-            <button
-              className={`${colors.oppBg} ${colors.oppText} ${colors.hoverText} mb-5 rounded-md transition-all ${colors.buttonHover} hover:px-10`}
-            >
-              <p className="font-header font-bold lg:text-lg md:text-md text-sm mx-5 my-2">
-                Github Repo
-              </p>
-            </button>
+          </h2>
+          <a
+            className={`${colors.oppBg} ${colors.oppText} ${colors.hoverText} mb-5 rounded-md transition-all ${colors.buttonHover} hover:px-10`}
+            href="https://github.com/sebastianmorgan951/Java-Console-Snake-Game"
+          >
+            <p className="font-header font-bold lg:text-lg md:text-md text-sm mx-5 my-2">
+              Github Repo
+            </p>
           </a>
           <p
             className={`font-body lg:text-xl md:text-lg text-md mb-5 self-start ${colors.text}`}
@@ -139,7 +138,7 @@ export default function Coding() {
           <div className="relative min-w-200px max-w-400px min-h-200px max-h-400px  w-30% pt-40% m-2">
             <div className="absolute top-0 left-0 w-100% h-100%">
               <Image
-                alt=""
+                alt="Snake game with a snake represented using s characters and food represented using an o character, being played in terminal"
                 src={`/SnakeProgram.png`}
                 layout="fill"
                 objectFit="cover"
@@ -149,15 +148,15 @@ export default function Coding() {
               />
             </div>
           </div>
-        </div>
-        <div
+        </section>
+        <section
           className={`mt-10 ${colors.cardBg} rounded-xl min-w-full flex flex-col p-5 items-center justify-center relative ${styles.cardShadow} ${styles.hoverBrightenCard}`}
         >
-          <h1
+          <h2
             className={`font-header text-2xl md:text-4xl lg:text-5xl text-center font-bold ${colors.text}`}
           >
             Image Compression
-          </h1>
+          </h2>
           <p
             className={`font-body lg:text-xl md:text-lg text-md mb-5 self-start ${colors.text}`}
           >
@@ -191,23 +190,22 @@ export default function Coding() {
               I shouldn't cling to a project just because it sounds impressive
             </li>
           </p>
-        </div>
-        <div
+        </section>
+        <section
           className={`mt-10 ${colors.cardBg} rounded-xl min-w-full flex flex-col p-5 items-center justify-center relative ${styles.cardShadow} ${styles.hoverBrightenCard}`}
         >
-          <h1
+          <h2
             className={`font-header text-2xl md:text-4xl lg:text-5xl text-center font-bold ${colors.text}`}
           >
             Predicting Gentrified Tracts
-          </h1>
-          <a href="https://github.com/sebastianmorgan951/Gentrified_Tracts">
-            <button
-              className={`${colors.oppBg} ${colors.oppText} ${colors.hoverText} mb-5 rounded-md transition-all ${colors.buttonHover} hover:px-10`}
-            >
-              <p className="font-header font-bold lg:text-lg md:text-md text-sm mx-5 my-2">
-                Github Repo
-              </p>
-            </button>
+          </h2>
+          <a
+            className={`${colors.oppBg} ${colors.oppText} ${colors.hoverText} mb-5 rounded-md transition-all ${colors.buttonHover} hover:px-10`}
+            href="https://github.com/sebastianmorgan951/Gentrified_Tracts"
+          >
+            <p className="font-header font-bold lg:text-lg md:text-md text-sm mx-5 my-2">
+              Github Repo
+            </p>
           </a>
           <p
             className={`font-body lg:text-xl md:text-lg text-md mb-5 self-start ${colors.text}`}
@@ -262,23 +260,22 @@ export default function Coding() {
             <li>I needed something more practical and clear</li>
             <li>Python makes sense as a first language</li>
           </p>
-        </div>
-        <div
+        </section>
+        <section
           className={`mt-10 ${colors.cardBg} rounded-xl min-w-full flex flex-col p-5 items-center justify-center relative ${styles.cardShadow} ${styles.hoverBrightenCard}`}
         >
-          <h1
+          <h2
             className={`font-header text-2xl md:text-4xl lg:text-5xl text-center font-bold ${colors.text}`}
           >
             Minecraft Modding
-          </h1>
-          <a href="https://github.com/sebastianmorgan951/ComicallyLargeSpoonMod">
-            <button
-              className={`${colors.oppBg} ${colors.oppText} ${colors.hoverText} mb-5 rounded-md transition-all ${colors.buttonHover} hover:px-10`}
-            >
-              <p className="font-header font-bold lg:text-lg md:text-md text-sm mx-5 my-2">
-                Github Repo
-              </p>
-            </button>
+          </h2>
+          <a
+            className={`${colors.oppBg} ${colors.oppText} ${colors.hoverText} mb-5 rounded-md transition-all ${colors.buttonHover} hover:px-10`}
+            href="https://github.com/sebastianmorgan951/ComicallyLargeSpoonMod"
+          >
+            <p className="font-header font-bold lg:text-lg md:text-md text-sm mx-5 my-2">
+              Github Repo
+            </p>
           </a>
           <p
             className={`font-body lg:text-xl md:text-lg text-md mb-5 self-start ${colors.text}`}
@@ -313,7 +310,7 @@ export default function Coding() {
             <div className="relative min-w-200px max-w-400px min-h-200px max-h-400px  w-30% pt-5% m-2">
               <div className="absolute top-0 left-0 w-100% h-100%">
                 <Image
-                  alt=""
+                  alt="Minecraft character holding a large spoon, looking menacingly at the camera"
                   src={`/ComicallyLargeSpoon.png`}
                   layout="fill"
                   objectFit="cover"
@@ -326,7 +323,7 @@ export default function Coding() {
             <div className="relative min-w-200px max-w-400px min-h-200px max-h-400px  w-30% pt-30% m-2">
               <div className="absolute top-0 left-0 w-100% h-100%">
                 <Image
-                  alt=""
+                  alt="Minecraft swords stuck in slabs so that the handle sticks out, and the sharp end is embedded in the mossy slab"
                   src={`/ComicallyLargeSpoonMounds.png`}
                   layout="fill"
                   objectFit="cover"
@@ -337,15 +334,15 @@ export default function Coding() {
               </div>
             </div>
           </div>
-        </div>
-        <div
+        </section>
+        <section
           className={`mt-10 ${colors.cardBg} rounded-xl min-w-full flex flex-col p-5 items-center justify-center relative ${styles.cardShadow} ${styles.hoverBrightenCard}`}
         >
-          <h1
+          <h2
             className={`font-header text-2xl md:text-4xl lg:text-5xl text-center font-bold ${colors.text}`}
           >
             UCSD Classes
-          </h1>
+          </h2>
           <p
             className={`font-body lg:text-xl md:text-lg text-md mb-5 self-start ${colors.text}`}
           >
@@ -367,33 +364,31 @@ export default function Coding() {
             <li>Knowledge of data structures and algorithms</li>
             <li>Exposure to many coding languages (Java, C++, C, Scripting)</li>
           </p>
-        </div>
-        <div
+        </section>
+        <section
           className={`mt-10 ${colors.cardBg} rounded-xl min-w-full flex flex-col p-5 items-center justify-center relative ${styles.cardShadow} ${styles.hoverBrightenCard}`}
         >
-          <h1
+          <h2
             className={`font-header text-2xl md:text-4xl lg:text-5xl text-center font-bold ${colors.text}`}
           >
             Hashmap Visualizer
-          </h1>
+          </h2>
           <div className="flex flex-row justify-center items-center">
-            <a href="https://sebastianmorgan951.github.io/HashMapVisualizerDeployed/">
-              <button
-                className={`${colors.oppBg} ${colors.oppText} ${colors.hoverText} mb-5 mr-5 rounded-md transition-all ${colors.buttonHover} hover:px-10`}
-              >
-                <p className="font-header font-bold lg:text-lg md:text-md text-sm mx-5 my-2">
-                  Deployed App
-                </p>
-              </button>
+            <a
+              className={`${colors.oppBg} ${colors.oppText} ${colors.hoverText} mb-5 mr-5 rounded-md transition-all ${colors.buttonHover} hover:px-10`}
+              href="https://sebastianmorgan951.github.io/HashMapVisualizerDeployed/"
+            >
+              <p className="font-header font-bold lg:text-lg md:text-md text-sm mx-5 my-2">
+                Deployed App
+              </p>
             </a>
-            <a href="https://github.com/sebastianmorgan951/HashMapVisualizerDeployed">
-              <button
-                className={`${colors.oppBg} ${colors.oppText} ${colors.hoverText} mb-5 rounded-md transition-all ${colors.buttonHover} hover:px-10`}
-              >
-                <p className="font-header font-bold lg:text-lg md:text-md text-sm mx-5 my-2">
-                  Github Repo
-                </p>
-              </button>
+            <a
+              className={`${colors.oppBg} ${colors.oppText} ${colors.hoverText} mb-5 rounded-md transition-all ${colors.buttonHover} hover:px-10`}
+              href="https://github.com/sebastianmorgan951/HashMapVisualizerDeployed"
+            >
+              <p className="font-header font-bold lg:text-lg md:text-md text-sm mx-5 my-2">
+                Github Repo
+              </p>
             </a>
           </div>
           <p
@@ -434,7 +429,7 @@ export default function Coding() {
           <div className="relative min-w-200px max-w-400px min-h-200px max-h-400px  w-30% pt-30% m-2">
             <div className="absolute top-0 left-0 w-100% h-100%">
               <Image
-                alt=""
+                alt="a table with keys and values stored and options available for the user to enter a key and value, and arrows tracking each operation"
                 src={`/Coding_Hashvisualize.png`}
                 layout="fill"
                 objectFit="cover"
@@ -444,15 +439,15 @@ export default function Coding() {
               />
             </div>
           </div>
-        </div>
-        <div
+        </section>
+        <section
           className={`mt-10 ${colors.cardBg} rounded-xl min-w-full flex flex-col p-5 items-center justify-center relative ${styles.cardShadow} ${styles.hoverBrightenCard}`}
         >
-          <h1
+          <h2
             className={`font-header text-2xl md:text-4xl lg:text-5xl text-center font-bold ${colors.text}`}
           >
             Wordpress and PHP
-          </h1>
+          </h2>
           <p
             className={`font-body lg:text-xl md:text-lg text-md mb-5 self-start ${colors.text}`}
           >
@@ -477,23 +472,22 @@ export default function Coding() {
             <li>PHP is very scary</li>
             <li>I appreciated React 10x more</li>
           </p>
-        </div>
-        <div
+        </section>
+        <section
           className={`mt-10 ${colors.cardBg} rounded-xl min-w-full flex flex-col p-5 items-center justify-center relative ${styles.cardShadow} ${styles.hoverBrightenCard}`}
         >
-          <h1
+          <h2
             className={`font-header text-2xl md:text-4xl lg:text-5xl text-center font-bold ${colors.text}`}
           >
             React Developer Intern <br /> AMF Media
-          </h1>
-          <a href="https://app.neufluence.com/">
-            <button
-              className={`${colors.oppBg} ${colors.oppText} ${colors.hoverText} mb-5 rounded-md transition-all ${colors.buttonHover} hover:px-10`}
-            >
-              <p className="font-header font-bold lg:text-lg md:text-md text-sm mx-5 my-2">
-                Neufluence App
-              </p>
-            </button>
+          </h2>
+          <a
+            className={`${colors.oppBg} ${colors.oppText} ${colors.hoverText} mb-5 rounded-md transition-all ${colors.buttonHover} hover:px-10`}
+            href="https://app.neufluence.com/"
+          >
+            <p className="font-header font-bold lg:text-lg md:text-md text-sm mx-5 my-2">
+              Neufluence App
+            </p>
           </a>
           <p
             className={`font-body lg:text-xl md:text-lg text-md mb-5 self-start ${colors.text}`}
@@ -577,33 +571,31 @@ export default function Coding() {
             <li>Thinking of the user first</li>
             <li>How to use github effectively</li>
           </p>
-        </div>
-        <div
+        </section>
+        <section
           className={`mt-10 ${colors.cardBg} rounded-xl min-w-full flex flex-col p-5 items-center justify-center relative ${styles.cardShadow} ${styles.hoverBrightenCard}`}
         >
-          <h1
+          <h2
             className={`font-header text-2xl md:text-4xl lg:text-5xl text-center font-bold ${colors.text}`}
           >
             Other Web Duties
-          </h1>
+          </h2>
           <div className="flex flex-row justify-center items-center">
-            <a href="https://ostem.ucsd.edu">
-              <button
-                className={`mr-5 ${colors.oppBg} ${colors.oppText} ${colors.hoverText} mb-5 rounded-md transition-all ${colors.buttonHover} hover:px-10`}
-              >
-                <p className="font-header font-bold lg:text-lg md:text-md text-sm mx-5 my-2">
-                  oSTEM Website
-                </p>
-              </button>
+            <a
+              href="https://ostem.ucsd.edu"
+              className={`mr-5 ${colors.oppBg} ${colors.oppText} ${colors.hoverText} mb-5 rounded-md transition-all ${colors.buttonHover} hover:px-10`}
+            >
+              <p className="font-header font-bold lg:text-lg md:text-md text-sm mx-5 my-2">
+                oSTEM Website
+              </p>
             </a>
-            <a href="https://jacobsschool.ucsd.edu/idea/events/pei">
-              <button
-                className={`${colors.oppBg} ${colors.oppText} ${colors.hoverText} mb-5 rounded-md transition-all ${colors.buttonHover} hover:px-10`}
-              >
-                <p className="font-header font-bold lg:text-lg md:text-md text-sm mx-5 my-2">
-                  PEI Website
-                </p>
-              </button>
+            <a
+              className={`${colors.oppBg} ${colors.oppText} ${colors.hoverText} mb-5 rounded-md transition-all ${colors.buttonHover} hover:px-10`}
+              href="https://jacobsschool.ucsd.edu/idea/events/pei"
+            >
+              <p className="font-header font-bold lg:text-lg md:text-md text-sm mx-5 my-2">
+                PEI Website
+              </p>
             </a>
           </div>
           <p
@@ -632,7 +624,7 @@ export default function Coding() {
             <div className="relative min-w-200px max-w-400px min-h-200px max-h-400px  w-30% pt-5% m-2">
               <div className="absolute top-0 left-0 w-100% h-100%">
                 <Image
-                  alt=""
+                  alt="Out in STEM website home page screenshot"
                   src={`/Coding_oSTEM.png`}
                   layout="fill"
                   objectFit="cover"
@@ -645,7 +637,7 @@ export default function Coding() {
             <div className="relative min-w-200px max-w-400px min-h-200px max-h-400px  w-30% pt-30% m-2">
               <div className="absolute top-0 left-0 w-100% h-100%">
                 <Image
-                  alt=""
+                  alt="Professional Evening with Industry at UCSD website home page screenshot"
                   src={`/Coding_PEI.png`}
                   layout="fill"
                   objectFit="cover"
@@ -656,8 +648,8 @@ export default function Coding() {
               </div>
             </div>
           </div>
-        </div>
-      </div>
+        </section>
+      </main>
     </div>
   );
 }
