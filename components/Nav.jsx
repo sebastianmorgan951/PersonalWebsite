@@ -33,7 +33,7 @@ const Nav = () => {
           />
           <Link href="/">
             <a
-              className={`cursor-pointer transition-all hover:bg-darkSecondary hover:translate-x-0.5 hover:translate-y-0.5 flex items-center justify-center mr-2`}
+              className={`cursor-pointer transition-all duration-75 hover:bg-darkSecondary hover:translate-x-0.5 hover:translate-y-0.5 flex items-center justify-center mr-2`}
             >
               <p
                 className={`font-header text-xl md:text-2xl px-3 xs:px-5 py-2`}
@@ -44,7 +44,7 @@ const Nav = () => {
           </Link>
           <Link href="/nature">
             <a
-              className={`cursor-pointer transition-all hover:bg-darkSecondary hover:translate-x-0.5 hover:translate-y-0.5 flex items-center justify-center mr-2`}
+              className={`cursor-pointer transition-all duration-75 hover:bg-darkSecondary hover:translate-x-0.5 hover:translate-y-0.5 flex items-center justify-center mr-2`}
             >
               <p
                 className={`font-header text-xl md:text-2xl px-3 xs:px-5 py-2`}
@@ -55,7 +55,7 @@ const Nav = () => {
           </Link>
           <Link href="/coding">
             <a
-              className={`cursor-pointer transition-all hover:bg-darkSecondary hover:translate-x-0.5 hover:translate-y-0.5 flex items-center justify-center`}
+              className={`cursor-pointer transition-all duration-75 hover:bg-darkSecondary hover:translate-x-0.5 hover:translate-y-0.5 flex items-center justify-center`}
             >
               <p
                 className={`font-header text-xl md:text-2xl px-3 xs:px-5 py-2`}
@@ -101,7 +101,7 @@ export const SimpleNav = () => {
         >
           <Link href="/">
             <a
-              className={`cursor-pointer transition-all hover:bg-darkSecondary hover:translate-x-0.5 hover:translate-y-0.5 flex items-center justify-center mr-2`}
+              className={`cursor-pointer transition-all duration-75 hover:bg-darkSecondary hover:translate-x-0.5 hover:translate-y-0.5 flex items-center justify-center mr-2`}
             >
               <p
                 className={`font-header text-xl md:text-2xl px-3 xs:px-5 py-2`}
@@ -112,7 +112,7 @@ export const SimpleNav = () => {
           </Link>
           <Link href="/nature">
             <a
-              className={`cursor-pointer transition-all hover:bg-darkSecondary hover:translate-x-0.5 hover:translate-y-0.5 flex items-center justify-center mr-2`}
+              className={`cursor-pointer transition-all duration-75 hover:bg-darkSecondary hover:translate-x-0.5 hover:translate-y-0.5 flex items-center justify-center mr-2`}
             >
               <p
                 className={`font-header text-xl md:text-2xl px-3 xs:px-5 py-2`}
@@ -123,7 +123,7 @@ export const SimpleNav = () => {
           </Link>
           <Link href="/coding">
             <a
-              className={`cursor-pointer transition-all hover:bg-darkSecondary hover:translate-x-0.5 hover:translate-y-0.5 flex items-center justify-center`}
+              className={`cursor-pointer transition-all duration-75 hover:bg-darkSecondary hover:translate-x-0.5 hover:translate-y-0.5 flex items-center justify-center`}
             >
               <p
                 className={`font-header text-xl md:text-2xl px-3 xs:px-5 py-2`}
