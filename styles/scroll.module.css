@@ -1,14 +1,6 @@
-.scrollContainer {
-  perspective: 3px;
-  perspective-origin: top;
-  overflow-x: hidden;
-  overflow-y: auto;
-  height: 100vh;
-}
-
-.scrollSpeed {
-  transform: translateZ(1px) scale(0.69);
-  transform-origin: top;
+.parallax {
+  transform: translateZ(-4px) scale(2);
+  transform-style: preserve-3d;
 }
 
 .smoothTransition {

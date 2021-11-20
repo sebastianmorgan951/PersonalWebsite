@@ -65,7 +65,7 @@ const Nav = () => {
             </a>
           </Link>
           <div
-            className={`hidden md:flex relative mx-5 ${
+            className={`hidden md:flex relative mx-5 transition-all ${
               inView ? "w-30vw md:w-18vw" : "w-9vw md:w-7vw lg:w-4vw"
             }`}
           >
