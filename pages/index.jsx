@@ -8,7 +8,6 @@ import Link from "next/link";
 
 /** TODO:
  *
- * Parallax Scroll Effect on first IMG
  * Reduced Motion at some point
  */
 
@@ -16,6 +15,32 @@ export default function Home() {
   const [arrowAnimationToggle, setArrowAnimationToggle] = useState(false);
   const [firstRender, setFirstRender] = useState(true);
   const [hoverWhoAmICard, setHoverWhoAmICard] = useState(false);
+
+  var lastScrollPosition = 0;
+  var backgroundImageObj = null;
+  var tick = false; // Track whether call is currently in process
+
+  const parallaxEffects = (scrollPos) => {
+    if (!backgroundImageObj) {
+      backgroundImageObj = document.getElementById("bgImg");
+    }
+    backgroundImageObj.style.top = `${-(scrollPos * 0.4)}px`;
+    console.log(backgroundImageObj.style);
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", (e) => {
+      lastScrollPosition = window.scrollY;
+      if (!tick) {
+        //Use RAF function to enqueue animations rather than force many small animations
+        window.requestAnimationFrame(() => {
+          parallaxEffects(lastScrollPosition);
+          tick = false;
+        });
+        tick = true;
+      }
+    });
+  }, []);
 
   const [triggerTypingRef, typingEffectView] = useInView({
     threshold: 1,
@@ -41,6 +66,7 @@ export default function Home() {
       <div className="absolute w-100% pt-40%">
         <div className="absolute top-0 left-0 w-100% h-100%">
           <Image
+            id="bgImg"
             src="/Background.jpg"
             layout="fill"
             objectFit="cover"
