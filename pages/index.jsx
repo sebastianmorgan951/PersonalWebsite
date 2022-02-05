@@ -25,7 +25,6 @@ export default function Home() {
       backgroundImageObj = document.getElementById("bgImg");
     }
     backgroundImageObj.style.top = `${-(scrollPos * 0.4)}px`;
-    console.log(backgroundImageObj.style);
   };
 
   useEffect(() => {
@@ -77,7 +76,7 @@ export default function Home() {
       </div>
       <div className="mt-25%"></div>
       <Nav />
-      <main className="overflow-x-hidden flex flex-col min-w-full bg-gradient-to-b from-secondary to-darkSecondary relative pb-10 z-10 -mt-2">
+      <main className="overflow-x-hidden flex flex-col min-w-full bg-gradient-to-b from-secondary to-darkSecondary pb-10 z-10 -mt-2">
         <div className="hidden md:flex h-7vw"></div>
         <section
           className={`py-5 lg:pl-20% lg:pr-25% md:pl-12% md:pr-15% pl-4% pr-6% flex flex-col items-start bg-secondary  ${styles.hoverBrightenCard}`}
@@ -145,9 +144,7 @@ export default function Home() {
           </p>
         </section>
         <section className="min-w-full">
-          <CodeWindow
-            className={`${styles.hoverBrightenCard} mt-32 py-5 pl-4% ml-2% pr-2% mr-4% md:pl-3% md:ml-9% md:pr-3% md:mr-12% lg:pl-5% lg:ml-15% lg:pr-5% lg:mr-20% items-end`}
-          >
+          <CodeWindow className={`${styles.hoverBrightenCard}`}>
             <h2
               className={` font-bold text-3xl md:text-4xl text-lightPrimary font-header relative mb-8`}
             >

@@ -16,7 +16,12 @@ module.exports = {
         blue: "#518dae",
         red: "#c23d46",
       },
+      cursor: {
+        grab: "grab",
+        grabbing: "grabbing",
+      },
       spacing: {
+        codeWindow: "128px",
         "82vh": "82vh",
         "50vh": "50vh",
         "30vw": "30vw",
