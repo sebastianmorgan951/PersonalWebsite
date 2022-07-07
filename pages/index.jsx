@@ -97,13 +97,16 @@ export default function Home() {
             Who am I?
           </h1>
           <p className="font-body text-lg md:text-xl lg:text-2xl text-white leading-8 md:leading-9 lg:leading-10">
-            My name is Sebastian Morgan, and I am a 4<sup>th</sup> year{" "}
-            <b>Math and Computer Sciences</b> student at the University of
-            California, San Diego. Beyond web development and other fun coding
-            endeavors, I enjoy spending as much time interacting with the
-            natural world as I can, leading within the communities that have
-            made an impact on my life, and appreciating the people and
-            opportunities that have taken me this far.
+            My name is Sebastian Morgan, and I <strike>am</strike> just finished
+            my 4<sup>th</sup> year as a <b>Math and Computer Sciences</b>{" "}
+            student at the University of California, San Diego. I am now working
+            at BD as a Software Development Program Engineer! This program will
+            take me through several projects and teams, allowing me to work on
+            different medical devices and technologies. Beyond web development
+            and other fun coding endeavors, I enjoy spending as much time
+            interacting with the natural world as I can, leading within the
+            communities that have made an impact on my life, and appreciating
+            the people and opportunities that have taken me this far.
           </p>
         </section>
         <section
@@ -132,15 +135,16 @@ export default function Home() {
             </h2>
           </div>
           <p className="font-body text-md md:text-lg lg:text-xl text-white leading-6 md:leading-7 lg:leading-8">
-            As a student leader, I am working to build a more inclusive and
+            As a student leader at UCSD, I worked to build a more inclusive and
             positive community at UC San Diego as the VP–Internal, then as the
-            co-President for Out in STEM at UCSD. Over the past nearly three
-            years with Out in STEM at UCSD, I've had to manage conflict, work in
-            and lead a team, and listen to every person within that team.
-            Currently, as the co-President of oSTEM @ UCSD, I am working to
-            build the confidence of incoming student leaders, to become a more
-            effective communicator, and to take responsibility for my actions
-            and shortcomings.
+            co-President for Out in STEM at UCSD. Over those nearly three years
+            with Out in STEM at UCSD, I had to manage conflict, work in and lead
+            a team, and listen to every person within that team. <br />
+            <br />
+            As I move towards being employed, I look forward to spending my
+            extra time volunteering to support meaningful issues, whether
+            through educational outreach, building websites to help get the word
+            out for important organizations, or any other way I can help.
           </p>
         </section>
         <section className="min-w-full">
@@ -164,17 +168,14 @@ export default function Home() {
             <p
               className={`${styles.codeBlockExecute} ${styles.codingTypingAnimation} relative font-code text-sm md:text-md lg:text-lg text-white leading-6 md:leading-7 lg:leading-8`}
             >
-              It seems like UCSD always steers students in the direction of
-              software engineering. I have thoroughly enjoyed working closely
-              with algorithms and optimizing problems that these classes
-              introduced. At this moment I am deeply interested in web
-              development, but I am open to the idea of exploring other paths in
-              technology and learning as much as I can. Over the past year, I've
-              done just that: explore. First, I switched my major to Math and
-              Computer Sciences so I could immerse myself more deeply in
-              Computer Sciences. I looked into machine learning and prompty left
-              that for another time, worked on a minecraft mod and rediscovered
-              how fun Java was to work with, then I typed in{" "}
+              My journey through technology is characterized by exploration.
+              First, I switched my major to Math and Computer Sciences so I
+              could immerse myself more deeply in Computer Sciences at UCSD. I
+              looked into machine learning and learning the mathematics behind
+              small multilayer perceptrons and working on a small project, but
+              left that for another time. Then I worked on a minecraft mod and
+              rediscovered how fun Java was to work with, cementing my data
+              structures and algorithms fundamentals. Finally, I typed in{" "}
               <b>create-react-app</b> and the world of the web opened its arms
               to me.
             </p>
@@ -210,11 +211,11 @@ export default function Home() {
               Not only did I learn to love my environment, but I grew out of an
               awkward teenager into someone who has realized that they{" "}
               <i>like</i> people. I value loyalty, kindness, and respect above
-              all else, and in my professional endeavors, I will look for
-              positions and opportunities that respect <b>me</b> fully.
-              Currently, I feel passion for coding, for working in technology,
-              and I will be unwavering in my efforts to find a job which allows
-              me to continue being passionate about learning and programming.
+              all else, and in my professional endeavors, I expect these
+              positions and opportunities to respect <b>me</b> fully. Currently,
+              I feel passion for coding, for working in technology, and I will
+              be unwavering in my efforts to find a job which allows me to
+              continue being passionate about learning and programming.
             </p>
           </div>
         </section>
